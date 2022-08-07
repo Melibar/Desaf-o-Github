@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,21 +34,29 @@
         <main>
             <section>
                 <div>
-                <h2 class="biografia">
+                <h2 class="biografia" data-aos="flip-left">
                     Biografía
                 </h2>
                 </div>
-                <div>
+                <div class="ParrafoBio">
                     <p class="pbiografia"><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequuntur non, aperiam provident cum eius molestiae ipsa culpa laboriosam nulla qui rerum dolorum ipsum, ratione quam vitae perspiciatis. Molestiae, veniam sit maxime necessitatibus vero, delectus quam sed eveniet autem a repudiandae, enim unde beatae fugiat natus optio? Voluptatem hic, nostrum voluptates animi nobis perferendis accusamus facilis, non debitis molestias dolores accusantium at eos natus, quibusdam rerum modi blanditiis ratione numquam nemo. Maxime sint rerum aperiam quidem delectus voluptatum architecto nisi doloremque molestiae in recusandae aliquid id sunt impedit, quisquam hic atque et corporis. Tempora placeat autem voluptatum animi similique facere earum ipsum dolorem ratione amet, consequatur debitis quod incidunt repudiandae dolor laboriosam illum magnam. Blanditiis minus ratione aliquam alias nihil voluptatibus adipisci iure, eligendi veniam commodi nulla dolor ullam dolore magni vero! Cumque deleniti nobis magnam nesciunt dolore voluptatem asperiores nulla. Nisi veniam itaque quasi incidunt quos laudantium, iusto asperiores recusandae ut aliquid assumenda, perspiciatis, quas minus quaerat expedita maiores magni obcaecati placeat debitis qui. Obcaecati saepe aliquid deserunt quo amet dolore ea impedit maxime dolores mollitia, architecto dolorem explicabo ut minus deleniti, enim a quae! Et ducimus sunt neque, quia, dolor atque aut itaque maiores magnam quaerat tenetur possimus.</em>
                     </p>
                 </div>
             </section>
             <br>
-            <section>
-                    <img src="../PattFotos/patt.png" width="250px">
-                    <img src="../PattFotos/patt3.png" width="290px">
-                    <img src="../PattFotos/patt4.png" width="300px">
-                    <img src="../PattFotos/patt1.png" width="290px">
+            <section class="imagess">
+                    <div class="acerca1">
+                        <img src="../PattFotos/patt.png" width="250px">
+                    </div>
+                    <div class="acerca2">
+                        <img src="../PattFotos/patt3.png" width="290px">
+                    </div>
+                    <div class="acerca3" >
+                        <img src="../PattFotos/patt4.png" width="300px">
+                    </div>
+                    <div class="acerca4">
+                        <img src="../PattFotos/patt1.png" width="290px">
+                    </div>
             </section>
             <br>
         </main>
@@ -71,6 +80,10 @@
                 Alumna: Melina Barraco
                 </h2>
             </div>
-        </footer>    
+        </footer>   
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script> 
+        AOS.init({easing: 'ease-out-back',duration: 2000}); 
+        </script> 
     </body>
     </html>
