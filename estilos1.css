@@ -248,6 +248,16 @@ footer{
 
 /*MODA*/
 /*seccion 1 moda*/
+
+.VideosOut{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1f 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-items: center;
+}
+
 .parrafomoda{
     width:50%;
     background-color:#cdc8c800;
@@ -266,16 +276,22 @@ footer{
     margin-bottom: 20px;
 }
 
-@media (max-width:480px){
+@media only screen and (max-width:480px){
+
+    body{
+        background-color: beige;
+    }
 .contenedor{
         display: grid;
         grid-template-columns: 480px;
         grid-template-rows:auto
-    }  
+    } 
+
 header{
     grid-row:1/2;
     grid-column:1/1 ;
 }
+
 
 main{
     grid-row:2/3;
@@ -286,8 +302,18 @@ footer{
     grid-row:3/4;
     grid-column:1/1 ;
 }
+
 .imagenesIndex{
     display: flex;
     flex-wrap: wrap;
 } 
+.imagenesRetratos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imagess{
+    display: flex;
+    flex-wrap: wrap;
+}
 } 
+
