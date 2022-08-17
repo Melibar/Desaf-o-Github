@@ -1,89 +1,256 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  background-color: #d2d2d2;
+}
+body .contenedor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px auto 200px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width:480px){
-
-    body{
-        background-color: beige;
-    }
-.contenedor{
-        display: grid;
-        grid-template-columns: 480px;
-        grid-template-rows:auto
-    } 
-
-header{
-    grid-row:1/2;
-    grid-column:1/1 ;
+header {
+  grid-row: 1/2;
+  grid-column: 1/5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100%;
+}
+header .Logo {
+  margin: 20px;
+}
+header nav {
+  background-color: rgb(130, 128, 128);
+  width: 100%;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+header nav .menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+header nav .menu .menu li {
+  font-family: "Shadows   Into Light", cursive;
+  font-size: 35px;
+  letter-spacing: 2px;
+  padding: 20px;
+  margin: 20px;
+}
+header nav .menu .menu li header nav .menu .menu li a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+header nav .menu .menu li header nav .menu .menu li a header nav .menu .menu li header nav .menu .menu li a header nav .menu .menu li header nav .menu .menu li a:hover {
+  color: rgb(5, 5, 5);
+  background-color: rgba(217, 100, 100, 0.627);
+  opacity: 0.6;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
 }
 
+main {
+  grid-row: 2/3;
+  grid-column: 1/5;
+  width: 100%;
+  /*ACERCA DE MI*/
+  /*MODA*/
+  /*seccion 1 moda*/
+}
+main .PrimerParrafo {
+  background-color: lightcoral;
+  opacity: 0.6;
+  width: 80vw;
+  margin: 0 auto;
+}
+main .PrimerParrafo .Parrafo1 {
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  color: rgb(43, 36, 36);
+  font-family: "Libre Bodoni", serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+main .imagenesIndex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  align-items: center;
+  /*TRABAJOS*/
+}
+main .imagenesIndex .imagenesIndex__fotosPrincipal {
+  grid-column: 1/1;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  align-items: center;
+  margin: 20px;
+}
+main .imagenesIndex .imagenesIndex__fotosTres {
+  grid-column: 2/2;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  align-items: center;
+}
+main .imagenesIndex .imagenesIndex__fotosCuatro {
+  grid-column: 3/3;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  align-items: center;
+}
+main .imagenesIndex .imagenesIndex__fotosCinco {
+  grid-column: 4/4;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  align-items: center;
+}
+main .ptrabajos {
+  width: 50%;
+  background-color: rgba(205, 200, 200, 0);
+  margin: 20px auto;
+  padding: 20px;
+  color: rgb(42, 39, 39);
+  font-family: "Libre Bodoni", serif;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+main .retratos {
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+main .naturaleza {
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+main .biografia {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+main .ParrafoBio {
+  background-color: lightcoral;
+  opacity: 0.6;
+  width: 80vw;
+  margin: 0 auto;
+}
+main .ParrafoBio .pbiografia {
+  width: 75%;
+  margin: 10px auto;
+  padding: 10px;
+  color: black;
+  font-family: "Libre     Bodoni", serif;
+  font-size: 1.1rem;
+  text-align: left;
+}
+main .imagess {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+main .imagess .acerca1:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+}
+main .imagess .acerca2:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+}
+main .imagess .acerca3:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+}
+main .imagess .acerca4:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+}
+main .parrafomoda {
+  width: 50%;
+  background-color: rgba(205, 200, 200, 0);
+  margin: 20px auto;
+  padding: 20px;
+  color: rgb(42, 39, 39);
+  font-family: "Libre Bodoni", serif;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+main .losOutfitsTitulo {
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+main .VideosOut {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1f 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  justify-items: center;
+}
 
-main{
-    grid-row:2/3;
-    grid-column:1/1 ;
-
+footer {
+  grid-row: 3/4;
+  grid-column: 1/5;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(65, 65, 65);
+  color: white;
 }
-footer{
-    grid-row:3/4;
-    grid-column:1/1 ;
+footer .redes1 {
+  margin: 8px;
 }
-
-.imagenesIndex{
-    display: flex;
-    flex-wrap: wrap;
-} 
-.imagenesRetratos{
-    display: flex;
-    flex-wrap: wrap;
+footer .sug2 {
+  text-decoration: none;
+  font-family: "Shadows Into Light", cursive;
+  color: white;
+  font-size: 25px;
 }
-.imagess{
-    display: flex;
-    flex-wrap: wrap;
+footer .sug2:hover {
+  color: rgb(5, 5, 5);
+  background-color: rgba(217, 100, 100, 0.627);
+  border-radius: 10%;
 }
-} 
+footer .alumna {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 25px;
+}/*# sourceMappingURL=estilo.css.map */
