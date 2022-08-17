@@ -29,29 +29,27 @@ header{
                     font-size: 35px;
                     letter-spacing: 2px;
                     padding: 20px;
-                    margin: 20px;
-                    
-                    & & a{
-                        text-decoration: none;
-                        color:white;
-                        text-align: center;
-                        
-                        & & &:hover{
-                            color: rgb(5, 5, 5);
-                            background-color: rgba(217, 100, 100, 0.627);
-                            opacity: 0.6;
-                            border-radius: 10%;
-                            -webkit-border-radius: 10%;
-                            -moz-border-radius: 10%;
-                            -ms-border-radius: 10%;
-                            -o-border-radius: 10%;
-                            transition: all 1s ease;
-                            -webkit-transition: all 1s ease;
-                            -moz-transition: all 1s ease;
-                            -ms-transition: all 1s ease;
-                            -o-transition: all 1s ease;
-                        }     
-                    }
+                    margin: 20px; 
+                }
+                .menu li a{
+                    text-decoration: none;
+                    color:white;
+                    text-align: center;
+                    .menu li a:hover{
+                        color: rgb(5, 5, 5);
+                        background-color: rgba(217, 100, 100, 0.627);
+                        opacity: 0.6;
+                        border-radius: 10%;
+                        -webkit-border-radius: 10%;
+                        -moz-border-radius: 10%;
+                        -ms-border-radius: 10%;
+                        -o-border-radius: 10%;
+                        transition: all 1s ease;
+                        -webkit-transition: all 1s ease;
+                        -moz-transition: all 1s ease;
+                        -ms-transition: all 1s ease;
+                        -o-transition: all 1s ease;
+                    }    
                 }
             }    
 
