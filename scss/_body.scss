@@ -1,0 +1,9 @@
+
+body{
+    background-color: #d2d2d2;
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 200px auto 200px;
+    }
+}
